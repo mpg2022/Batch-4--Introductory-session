@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript String operations</h1>
+<h2>Reverse</h2>
+
+<p id="demo"></p>
+
+<script> 
+
+//sample sentence
+    let txt = "This sentence will be reversed in this operation";
+//breaking into array
+    let txtWordArr = txt.split(" ");
+//temp array to hold the reverse string      
+     let reverseWord=[];
+//can iterate the loop backward      
+    for (let i=(txtWordArr.length)-1;i>=0;i--)
+    {
+//pushing the reverse of words into new array
+         reverseWord.push(txtWordArr[i]); 
+    }
+//join the words array 
+    
+     document.getElementById('demo').innerHTML=reverseWord.join(" ");
+</script>
+
+
+
+</body>
+</html>

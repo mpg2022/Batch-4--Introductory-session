@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>table,th,td
+        {
+            border:4px black;
+            border-bottom-left-radius:2%;
+        }
+        th,td{
+            padding-top:10px;
+            padding-bottom:10px;
+            padding-right:10px;
+            padding-left:40px;
+        }
+        tr:nth-child(even)
+        {
+            background-color: rgb(156, 210, 241);
+        }
+        tr:nth-child(odd)
+        {
+            background-color: rgb(206, 216, 203);
+        }
+
+        #image {
+            display: none;
+            
+        }
+
+        #btnID { box-sizing: border-box;
+
+               }
+
+
+        #btnID2 {
+
+                display: none;
+
+        }
+
+
+
+       button:hover { zoom: 120%;
+        background-color: rgb(171, 255, 75);
+        text-align: center;
+        text-emphasis-color: blue;
+        
+
+       }
+
+       a:hover{ background-color: rgb(241, 255, 39);
+                font-style: oblique;
+                font-weight: bold;
+
+
+
+       }
+
+
+
+       button{  background-color: rgb(255, 255, 254);
+        font-family: 'Lucida Sans';
+
+       }
+       body{background-image:url("pic1.png");}
+        </style>
+
+       <title>CV</title>
+</head>
+<body>
+    
+    
+    
+    
+    <script>
+        function show() {
+ 
+        document.getElementById('image')
+         .style.display = "block";
+
+        document.getElementById('btnID')
+         .style.display = "none";
+
+         document.getElementById('btnID2')
+         .style.display = "block";}
+        
+        function hide() {
+ 
+        document.getElementById('image')
+        .style.display = "none";
+
+        document.getElementById('btnID2')
+        .style.display = "none";
+
+        document.getElementById('btnID')
+         .style.display = "block";
+ }
+
+ 
+            
+    </script>
+
+    <button type="button" onclick="show()" id="btnID"> Show Photo</button>
+    <button type="button" onclick="hide()" id="btnID2"> Hide Photo</button>
+
+      
+    <img id="image" src="photo.jpg">
+    <h1>Manas Pratim Goswami</h1>
+    
+    <p>Guwahati, Assam, India</p>
+    <p><b>Mobile No:</b> <a href="tel:+919101912791"> 9101912791</a></p>
+    <P><b>Email ID:</b><a href="mailto:manaspg2016@example.com"> manaspg2016@gmail.com</a></P>
+    <p></p>
+    <button id="button" type="button" onclick='location.href="https://www.linkedin.com/in/manas-pratim-goswami-6017241a1"'> LinkedIn </button>
+    <h2>About</h2>
+    <p>Electrical Engineering student of 8th semester. Aiming to apply my knowledge acquired from coursework as well as self-study to work at your organisation.</p>
+    <h2>Education:</h2>
+    <table style="width:100%">
+
+                <tr>
+                    <th>Name of the education</th>
+                    <th>College name</th>
+                    <th>Board</th>
+                    <th>CGPA/Percentage</th>
+                </tr>
+                <tr>
+                    <td>B.Tech (EE)</td>
+                    <td>Jorhat Engineering College, Jorhat</td>
+                    <td>ASTU</td>
+                    <td>8.1</td>
+                </tr>
+            
+                <tr>
+                    <td>INTERMEDIATE</td>
+                    <td>Cotton College, Guwahati</td>
+                    <td>AHSEC</td>
+                    <td>83.4%</td>
+                </tr>
+                
+                <tr>
+                    <td>SSC</td>
+                    <td>St. Stephen's School, Guwahati</td>
+                    <td>SEBA</td>
+                    <td>93.3%</td>
+                </tr>
+    
+    </table>
+                <h2>Projects</h2>
+
+    <table style="width:90%">
+        <tr>
+            <th>Duration</th>
+            <th>Name of the project</th>
+            <th>Description</th>
+        </tr>
+        <tr>
+            <td>December- 2021 to
+                March-2022</td>
+            <td>Speaker identification using MFCC and cross-correlation using MATLAB</td>
+            <td>Identification of unknown speaker from a set of recorded speech samples. The MFCC of audio signals are used for speaker identification.</td>
+        </tr>
+        <tr>
+            <td>Jun-2021 to
+                July-2021</td>
+            <td>Simulation of Mizoram grid using PSSE</td>
+            <td>Simulated the Mizoram electricity grid using Power Systems Simulator for Engineering. Carried out load flow studies and fault analysis.</td>
+            
+        </tr>
+        <tr>
+            <td>June-2019 to
+                July-2021</td>
+            <td>Design and Simulation of a carry skip adder </td>
+            <td>Designing of a carry skip adder using transistor level gates simulated in spice. </td>
+            
+        </tr>
+    </table>
+
+<h2>Technical Skills</h2>
+<ol></ol><p><b>Languages:</b>
+<li> C 
+<li>   Python</p>
+</ol>
+
+<p><b>Core Languages:</b>  PSSE, MATLAB</p>
+
+<dl>
+
+<h2>Industrial Experience</h2>
+<dt><b>Study on Maintainence of Electric High Voltage Equipments</b></dt>
+<br>
+<dd>Done an internship at 132/33kV AEGCL grid substation, Jorhat.</dd>
+<dt><p><b>Study of power generation in Guwahati refinery. </b></p></dt>
+<dd><p>Done an internship at Indian Oil Corporation Limited, Guwahati refinery.</p></dd>
+</dl>
+<h2><b>Hobbies</b></h2>
+<ul>
+    <li>Playing Volleyball</li>    
+    <li>Badminton </P></li>
+<li>Playing Keyboard</li>
+<li>Flute</li>
+</ul>
+</body>
+</html>
